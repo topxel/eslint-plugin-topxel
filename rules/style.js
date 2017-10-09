@@ -121,7 +121,7 @@ module.exports = {
   'linebreak-style': 'off',
 
   // enforces empty lines around comments
-  'lines-around-comment': ['warn', { beforeBlockComment: true }],
+  'lines-around-comment': 'off',
 
   // enforce a maximum depth that blocks can be nested
   'max-depth': ['off', 4],

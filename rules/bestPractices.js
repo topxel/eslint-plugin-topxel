@@ -11,7 +11,21 @@ module.exports = {
   'block-scoped-var': 'error',
 
   // enforce that class methods utilize this
-  'class-methods-use-this': 'warn',
+  'class-methods-use-this': [
+    'warn',
+    {
+      exceptMethods: [
+        'render',
+        'componentWillMount',
+        'componentDidMount',
+        'componentWillReceiveProps',
+        'shouldComponentUpdate',
+        'componentWillUpdate',
+        'componentDidUpdate',
+        'componentWillUnmount'
+      ]
+    }
+  ],
 
   // specify the maximum cyclomatic complexity allowed in a program
   complexity: 'off',
@@ -222,7 +236,10 @@ module.exports = {
   'no-unmodified-loop-condition': 'error',
 
   // disallow usage of expressions in statement position
-  'no-unused-expressions': 'warn',
+  'no-unused-expressions': [
+    'error',
+    { allowTernary: true, allowShortCircuit: true }
+  ],
 
   // disallow unused labels
   'no-unused-labels': 'error',

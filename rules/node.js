@@ -5,7 +5,7 @@ module.exports = {
   'callback-return': ['error', ['callback', 'cb', 'next']],
 
   // require require() calls to be placed at top-level module scope
-  'global-require': 'error',
+  'global-require': 'warn',
 
   // require error handling in callbacks
   'handle-callback-err': ['warn', '^.*(e|E)rr(or)?$'],

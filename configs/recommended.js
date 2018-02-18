@@ -12,7 +12,9 @@ module.exports = {
   },
   env: {
     browser: true,
-    es6: true
+    node: true,
+    es6: true,
+    'jest/globals': true
   },
   settings: {
     'import/resolver': {
@@ -22,11 +24,13 @@ module.exports = {
     },
     'import/extensions': ['.js', '.jsx'],
     'import/core-modules': [],
-    'import/ignore': ['node_modules', '\\.(scss|css|svg|json)$']
+    'import/ignore': ['node_modules', '\\.(scss|css|svg|json)$'],
+    flowtype: {
+      onlyFilesWithFlowAnnotation: false
+    }
   },
-  plugins: ['import', 'prettier', 'babel', 'react', 'flowtype'],
+  plugins: ['import', 'prettier', 'babel', 'react', 'flowtype', 'jest'],
   extends: [
-    'plugin:flowtype/recommended',
     'plugin:react/recommended',
     'prettier',
     'prettier/flowtype',
@@ -40,6 +44,8 @@ module.exports = {
     require('../rules/node'),
     require('../rules/style'),
     require('../rules/es6'),
-    require('../rules/plugins/import')
+    require('../rules/plugins/flowtype'),
+    require('../rules/plugins/import'),
+    require('../rules/plugins/jest')
   )
 };

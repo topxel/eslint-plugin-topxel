@@ -101,7 +101,7 @@ module.exports = {
   'import/newline-after-import': 'error',
 
   // prefer a default export if module exports a single name
-  'import/prefer-default-export': 'error',
+  'import/prefer-default-export': 'off',
 
   // limit the maximum number of dependencies a module can have
   'import/max-dependencies': 'off',

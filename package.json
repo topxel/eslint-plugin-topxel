@@ -1,13 +1,8 @@
 {
   "name": "eslint-plugin-topxel",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Topxel's ESLint configuration inside a plugin.",
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "eslint-config",
-    "topxel"
-  ],
+  "keywords": ["eslint", "eslintconfig", "eslint-config", "topxel"],
   "license": "MIT",
   "homepage": "https://github.com/topxel/eslint-config-topxel",
   "bugs": {

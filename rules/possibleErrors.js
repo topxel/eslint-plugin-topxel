@@ -95,7 +95,10 @@ module.exports = {
   // avoid code that looks like two expressions but is actually one
   'no-unexpected-multiline': 'error',
 
-  // disallow unreachable statements after a return, throw, continue, or break statement
+  /**
+   * disallow unreachable statements after a return, throw, continue, or break
+   * statement
+   */
   'no-unreachable': 'error',
 
   // disallow control flow statements in finally blocks

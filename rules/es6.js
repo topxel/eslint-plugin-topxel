@@ -58,13 +58,19 @@ module.exports = {
   // disallow unnecessary constructors
   'no-useless-constructor': 'error',
 
-  // disallow renaming import, export, and destructured assignments to the same name
+  /**
+   * disallow renaming import, export, and destructured assignments to the same
+   * name
+   */
   'no-useless-rename': 'error',
 
   // require let or const instead of var
   'no-var': 'error',
 
-  // require or disallow method and property shorthand syntax for object literals
+  /**
+   * require or disallow method and property shorthand syntax for object
+   * literals
+   */
   'object-shorthand': [
     'error',
     'always',
@@ -83,7 +89,10 @@ module.exports = {
     }
   ],
 
-  // require const declarations for variables that are never reassigned after declared
+  /**
+   * require const declarations for variables that are never reassigned after
+   * declared
+   */
   'prefer-const': [
     'error',
     {
@@ -95,7 +104,10 @@ module.exports = {
   // require destructuring from arrays and/or objects
   'prefer-destructuring': 'off',
 
-  // disallow parseInt() and Number.parseInt() in favor of binary, octal, and hexadecimal literals
+  /**
+   * disallow parseInt() and Number.parseInt() in favor of binary, octal, and
+   * hexadecimal literals
+   */
   'prefer-numeric-literals': 'error',
 
   // require rest parameters instead of arguments

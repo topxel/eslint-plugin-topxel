@@ -236,7 +236,10 @@ module.exports = {
   'no-unmodified-loop-condition': 'error',
 
   // disallow usage of expressions in statement position
-  'no-unused-expressions': 'warn',
+  'no-unused-expressions': [
+    'error',
+    { allowTernary: true, allowShortCircuit: true }
+  ],
 
   // disallow unused labels
   'no-unused-labels': 'error',

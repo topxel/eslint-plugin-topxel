@@ -43,7 +43,10 @@ module.exports = {
   // require or disallow spacing between function identifiers and their invocations
   'func-call-spacing': ['error', 'never'],
 
-  // require function names to match the name of the variable or property to which they are assigned
+  /**
+   * require function names to match the name of the variable or property to
+   * which they are assigned
+   */
   'func-name-matching': 'off',
 
   // require or disallow named function expressions
@@ -79,10 +82,6 @@ module.exports = {
       SwitchCase: 1,
       VariableDeclarator: 1,
       outerIIFEBody: 1,
-      // MemberExpression: null,
-      // CallExpression: {
-      //   parameters: null,
-      // },
       FunctionDeclaration: {
         parameters: 1,
         body: 1
@@ -190,7 +189,7 @@ module.exports = {
   'no-lonely-if': 'warn',
 
   // disallow mixes of different operators
-  'no-mixed-operators': 'warn',
+  'no-mixed-operators': 'off',
 
   // disallow mixed spaces and tabs for indentation
   'no-mixed-spaces-and-tabs': 'warn',
@@ -202,16 +201,16 @@ module.exports = {
   'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1 }],
 
   // disallow negated conditions
-  'no-negated-condition': 'warn',
+  'no-negated-condition': 'off',
 
   // disallow nested ternary expressions
-  'no-nested-ternary': 'error',
+  'no-nested-ternary': 'off',
 
   // disallow use of the Object constructor
   'no-new-object': 'error',
 
   // disallow the unary operators ++ and --
-  'no-plusplus': 'error',
+  'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
 
   // disallow specified syntax
   'no-restricted-syntax': [

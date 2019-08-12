@@ -67,7 +67,7 @@ module.exports = {
     {
       min: 2,
       properties: 'always',
-      exceptions: ['x', 'y', 'i', 'j', 't', '_', '$']
+      exceptions: ['x', 'y', 'i', 'z', 'n', '_', '$']
     }
   ],
 

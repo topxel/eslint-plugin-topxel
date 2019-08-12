@@ -38,10 +38,10 @@ module.exports = {
   'flowtype/no-weak-types': 'off',
 
   // enforces consistent separators between properties in Flow object types
-  'flowtype/object-type-delimiter': 'comma',
+  'flowtype/object-type-delimiter': ['error', 'comma'],
 
   // this rule enforces exact object types
-  'flowtype/require-exact-type': ['error', 'always'],
+  'flowtype/require-exact-type': 'off',
 
   // requires that all function parameters have type annotations
   'flowtype/require-parameter-type': 'off',
@@ -50,19 +50,13 @@ module.exports = {
   'flowtype/require-return-type': 'off',
 
   // this rule validates Flow file annotations
-  'flowtype/require-valid-file-annotation': [
-    'error',
-    'always',
-    {
-      annotationStyle: 'line'
-    }
-  ],
+  'flowtype/require-valid-file-annotation': 'off',
 
   // requires that all variable declarators have type annotations
   'flowtype/require-variable-type': 'off',
 
   // enforces consistent use of semicolons after type aliases
-  'flowtype/semi': ['error', 'always'],
+  'flowtype/semi': 'off',
 
   // enforces sorting of Object annotations
   'flowtype/sort-keys': 'off',

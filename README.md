@@ -27,12 +27,13 @@ npm install --save-dev eslint eslint-plugin-topxel
 &nbsp;
 
 ## Setup
+
 Topxel's shareable ESLint rules are bundled in `eslint-plugin-topxel` package. To enable these rules add a `eslintConfig` property in your `package.json` or create a `.eslintrc` file in the root directory. Although we encourage using the first method to avoid having hidden files in your project. See the [ESLint configuration docs](https://eslint.org/docs/user-guide/configuring) for more details.
 
 ```json
 {
   "eslintConfig": {
-    "plugins": "topxel",
+    "plugins": ["topxel"],
     "extends": "plugin:topxel/recommended"
   }
 }
@@ -113,6 +114,7 @@ For example, to override the rule `quotes` from double to single and change iden
   }
 }
 ```
+
 &nbsp;
 
 ## License
